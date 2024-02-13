@@ -5,7 +5,11 @@ module.exports = {
   entry: './client/index.js',
   mode: process.env.NODE_ENV || 'development',
   output: {
+<<<<<<< HEAD
     path: path.join(__dirname, 'build'),
+=======
+    path: path.join(__dirname, 'dist'),
+>>>>>>> origin/dev
     filename: 'bundle.js',
   },
 
@@ -40,7 +44,11 @@ module.exports = {
   },
   devServer: {
     static: {
+<<<<<<< HEAD
       directory: path.join(__dirname, './build'),
+=======
+      directory: path.join(__dirname, 'dist'),
+>>>>>>> origin/dev
     },
     open: true,
     hot: true,
