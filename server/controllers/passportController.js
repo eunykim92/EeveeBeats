@@ -16,7 +16,7 @@ function(accessToken, refreshToken, expiresIn, profile, done) {
     console.log('Spotify Profile Object:', profile);
     console.log('Display Name:', profile.displayName);
     console.log('Emails', profile.emails);
-    // check if the user exists in your database
+    // check if the user exists in the database
     db.query('SELECT * FROM Users WHERE SpotifyID = $1', [profile.id], (err, result) => {
         if (err) {
             return done(err);
